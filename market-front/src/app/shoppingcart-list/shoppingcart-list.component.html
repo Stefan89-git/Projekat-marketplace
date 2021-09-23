@@ -1,0 +1,12 @@
+<div>
+  <table class="table">
+    <thead>
+    <tr>
+      <th>product name</th><th>quantity</th><th>price</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr app-shopppingcart-list-item *ngFor="let shopCart of shopCarts" [shopCart]="shopCart"></tr>
+    </tbody>
+  </table>
+</div>

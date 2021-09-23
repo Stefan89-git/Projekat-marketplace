@@ -1,0 +1,6 @@
+<app-search (setSearchTerm)="search($event)" (Rested)="reset()"></app-search>
+<app-product-list (markForCartShop)="setProductForShopcart($event)" [products]="products"></app-product-list>
+<app-shopcart-form [productForShopingCart]="productForCart"></app-shopcart-form>
+<app-add-product-page  [categories]="categories" (ProductAdded)="saveProduct($event)"></app-add-product-page>
+
+

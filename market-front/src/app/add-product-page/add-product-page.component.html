@@ -1,0 +1,21 @@
+
+<div class="c" >
+    <form >
+        <label>Category:</label><br>
+        <select class="form-control" name="category" id="category">
+            <option *ngFor="let c of categories">{{c.name}}</option>
+        </select>
+        <label for="name">Name</label><br>
+        <input name="name" id="name" ><br>
+        <label for="description">Description</label><br>
+        <input name="description" id="description" ><br>
+        <label for="price">Price</label><br>
+        <input name="price" id="price" ><br>
+        <label for="available-quantity">Available quantity</label><br>
+        <input name="available-quantity" id="available-quantity" ><br>
+        <label for="picture">Picture</label><br>
+        <input name="picture" id="picture" ><br><br>
+        <button class="btn btn-success" (click)="save()">Create</button>
+
+    </form>
+  </div>

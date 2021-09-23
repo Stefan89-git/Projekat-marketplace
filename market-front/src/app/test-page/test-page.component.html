@@ -1,0 +1,18 @@
+<div >
+    <div  class="bg-secondary bg-opacity-10" >
+  
+      <table class="table table-bordered table-striped">
+        <thead>
+        <tr>
+          <th>id</th><th>name</th><th>picture</th><th>price</th><th>creationDate</th><th>category</th><th>avaiable quantity</th>
+          <th >ShopCart</th>
+        </tr>
+        </thead>
+        <tbody>
+  
+        <tr app-product-list-item  *ngFor="let product of products" [product]="product"></tr>
+  
+        </tbody>
+      </table>
+    </div>
+  
